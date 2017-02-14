@@ -12,7 +12,7 @@ var contadorIntentos;
 
 function comenzar()
 {
-	//Genero el número RANDOM entre 1 y 100
+	numeroSecreo=Math.floor(Math.random()*(101-1))+1;//Genero el número RANDOM entre 1 y 100
 	 
 		//alert(numeroSecreto );
 	
@@ -21,6 +21,10 @@ function comenzar()
 
 function verificar()
 {
-	
+	var numero = domcument.GetElementById("numero").value;
+	if (numeroSecreto==numero)
+		{
+		
+
 	
 }
