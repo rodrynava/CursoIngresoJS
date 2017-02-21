@@ -20,6 +20,7 @@ function comenzar()
 				eleccionMaquina="tijera";
 				break;
 
+
 		}
 		//alert(eleccionMaquina);
 
@@ -44,6 +45,7 @@ function piedra()
 	{
 		alert("ganó la Maquina.");
 		ContadorDePerdidas++;
+		console.log(eleccionMaquina)
 	}
 
 mostarResultado();
@@ -90,6 +92,8 @@ function tijera()
 		alert("ganó la Maquina.");
 		ContadorDePerdidas++;
 	}
+	console.log(eleccionHumano);
+	console.log(eleccionMaquina);
 mostarResultado();
 }//FIN DE LA FUNCIÓN
 

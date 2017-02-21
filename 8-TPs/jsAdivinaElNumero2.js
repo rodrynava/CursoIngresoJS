@@ -14,7 +14,9 @@ var contadorIntentos;
 
 function comenzar()
 {
-	//Genero el número RANDOM entre 1 y 100
+  numeroSecreto=Math.floor(Math.random()*(101-1))+1;
+  console.log(numeroSecreto)
+
 	 
 	
 
@@ -23,6 +25,33 @@ function comenzar()
 function verificar()
 {
 	
-	
+	var numero = document.getElementById("numero").value;
+	contadorIntentos++;
+	switch(contadorIntentos)
+	{
+		case 1:
+		        alert("usted es un Psíquico");
+		        break;
+
+		case 2:
+		        alert("exelente percepcion");
+		        break;
+		case 3:
+	            alert("esto es suerte");
+	            break;
+	    case 4:
+	            alert("exelente tecnica");
+	            break;
+	    case 5:
+	            alert("usted esta en la media");
+	            break;
+
+	    case 6: 
+
+
+
+
+	}
+
 
 }
