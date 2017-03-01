@@ -10,7 +10,7 @@ Desde  6 Intentos hasta 10:”falta técnica”
 Más de 10 intentos: “afortunado en el amor!!”.*/
 
 var numeroSecreto; 
-var contadorIntentos;
+var contadorIntentos=0;
 
 function comenzar()
 {
@@ -27,6 +27,8 @@ function verificar()
 	
 	var numero = document.getElementById("numero").value;
 	contadorIntentos++;
+	if(numero==numeroSecreto)
+	{
 	switch(contadorIntentos)
 	{
 		case 1:
@@ -46,7 +48,19 @@ function verificar()
 	            alert("usted esta en la media");
 	            break;
 
-	    case 6: 
+	    case 6:
+	    case 7:
+	    case 8:
+	    case 9:
+	    case 10:
+	            alert("falta tecnica");
+	            break;
+	    default:
+	            alert("afortunado en el amor");    
+	 }
+
+	 }            
+
 
 
 
@@ -54,4 +68,3 @@ function verificar()
 	}
 
 
-}
